@@ -18,11 +18,12 @@ plotly
 matplotlib
 
 # Machine Learning
-keras
-tensorflow
+
 scikit-learn
 
 # Utilities
 python-dotenv
 IPython
 vconsoleprint
+
+-e .

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Predictor | AI Analysis</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stock Market Analyser & Predictor</h1>
+            <p>Real-time Market Insights & RNN-based Price Forecasting</p>
+        </header>
+
+        <section class="input-section">
+            <div class="input-group">
+                <input type="text" id="tickerInput" placeholder="Enter Tickers (e.g. AAPL, NVDA, MSFT)" value="AAPL, NVDA">
+                <button id="analyzeBtn">Analyze Market</button>
+            </div>
+        </section>
+
+        <section id="analysisSection" style="display: none;">
+            <h2 class="section-title">🔍 Market Insights</h2>
+            <div id="analysisContent" class="analysis-card">
+                <!-- Analysis will be injected here -->
+            </div>
+            
+            <div style="text-align: center; margin-bottom: 40px;">
+                <button id="predictBtn" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    🚀 Load RNN Price Predictions
+                </button>
+            </div>
+        </section>
+
+        <section id="predictionSection" style="display: none;">
+            <h2 class="section-title">📈 RNN Price Forecasts</h2>
+            <div id="predictionGrid" class="prediction-grid">
+                <!-- Predictions will be injected here -->
+            </div>
+        </section>
+
+        <div id="loading" class="loading-spinner">
+            <p>Fetching AI Insights... Please wait.</p>
+        </div>
+    </div>
+
+    <!-- Image Modal/Lightbox -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
