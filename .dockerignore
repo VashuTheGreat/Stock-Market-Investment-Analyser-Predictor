@@ -41,8 +41,7 @@
 .venv
 .vscode/
 __pycache__/
-artifact/
-artifacts/
+
 build/
 coverage.xml
 develop-eggs/
