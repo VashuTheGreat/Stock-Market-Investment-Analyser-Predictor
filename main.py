@@ -1,9 +1,7 @@
 from dotenv import load_dotenv
 load_dotenv()
+from logger import *
 
-import sys
-import os
-import io
 
 # Fix unicode encoding for windows console
 # if sys.stdout.encoding != 'utf-8':

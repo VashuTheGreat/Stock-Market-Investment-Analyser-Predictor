@@ -26,4 +26,4 @@ python-dotenv
 IPython
 vconsoleprint
 
--e .
+# -e .
