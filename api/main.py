@@ -11,6 +11,7 @@ templates = Jinja2Templates(directory="api/templates")
 app.mount("/static", StaticFiles(directory="api/static"), name="static")
 
 
+os.makedirs("artifacts", exist_ok=True)
 app.mount("/artifacts", StaticFiles(directory="artifacts"), name="artifacts")
 
 app.include_router(stock_analysis.router, prefix="/stock_market", tags=["Analysis"])
