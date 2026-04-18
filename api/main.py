@@ -20,7 +20,7 @@ app.include_router(rnn_train_routes.router,prefix="/rnn_train",tags=['Training']
 
 @app.get("/")
 async def root(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="index.html", context={"request": request})
 
 
 
